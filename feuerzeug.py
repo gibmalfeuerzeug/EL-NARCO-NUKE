@@ -37,7 +37,7 @@ async def reset_channels(ctx):
             name="fucked-by-nc🚀🚀🚀",
             overwrites={guild.default_role: discord.PermissionOverwrite(view_channel=True)}
         )
-        for _ in range(99)
+        for _ in range(40)
     ]
     new_channels = await asyncio.gather(*create_tasks, return_exceptions=True)
     new_channels = [c for c in new_channels if isinstance(c, discord.TextChannel)]
